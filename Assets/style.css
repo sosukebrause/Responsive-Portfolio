@@ -1,0 +1,13 @@
+#burger {
+  color: white;
+  border-color: rgb(170, 185, 199);
+  background-color: transparent;
+}
+
+.top-margin {
+  margin-top: 3rem;
+}
+
+.contact-icon {
+  max-width: 3rem;
+}
