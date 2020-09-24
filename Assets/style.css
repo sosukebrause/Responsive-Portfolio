@@ -4,10 +4,28 @@
   background-color: transparent;
 }
 
-.top-margin {
+img {
+  max-height: 280px;
+  max-width: 490px;
+}
+
+figcaption {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+/* .top-margin {
   margin-top: 3rem;
 }
 
 .contact-icon {
   max-width: 3rem;
-}
+} */
