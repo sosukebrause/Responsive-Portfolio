@@ -15,15 +15,19 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
 
-    <title>Portfolio: Sosuke Brause</title>
+    <title>Portfolio:Sosuke/Home</title>
   </head>
   <body>
     <!-- nav starts -->
     <!-- <div class="container text-white"> -->
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand text-white" href="#">Sosuke Brause</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand text-white" href="./index.html">Sosuke Brause</a>
 
       <button
         id="burger"
@@ -42,8 +46,8 @@
           <a class="nav-link active" href="#"
             >Home <span class="sr-only">(current)</span></a
           >
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          <a class="nav-link" href="./contact.html">Contact</a>
           <a
             class="nav-link disabled"
             href="#"
@@ -59,28 +63,44 @@
 
     <!-- JUMBO begins -->
     <div class="jumbotron">
-      <h1 class="display-4">Greetings</h1>
-      <p class="lead">
-        I'm a full stack web developer in the making, just finishing a UC
-        Berkeley Extension program focused on the MERN stack technologies. Have
-        a peek at some of my work or get to know me via the external links
-        provided in the contacts page. Feel free to reach out to me at any time,
-        and thank you for visiting!
-      </p>
+      <h1 class="greet">&lt;greetings&gt;</h1>
+      <br />
+      <div class="container upcontain">
+        <p>
+          I am a full stack web developer in the making, just finishing a UC
+          Berkeley Extension program focusing on MERN stack technologies. Have a
+          peek at some of my work or get to know me via these external links.
+          Feel free to reach out to me at any time, and thank you for visiting!
+          <!-- <a href="./contact.html"/> -->
+        </p>
+        <div class="git-link">
+          <button
+            class="btn btn-primary btn-sm"
+            href="./portfolio.html"
+            id="git"
+          >
+            Portfolio
+          </button>
+        </div>
+      </div>
+      <h1 class="greet end">&lt;/greetings&gt;</h1>
       <hr class="my-4" />
-      <p>
-        It uses utility classes for typography and spacing to space content out
-        within the larger container.
-      </p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <div class="container undercontainer" id="undercontainer">
+        <h6>
+          JavaScript is my native tongue and weapon choice. I plan to continue
+          solidifying my understanding of this sorcery before embarking onto
+          another language. Below are some of the tools I use in conjunction
+          with JavaScript to bring my creations to life.
+        </h6>
+      </div>
     </div>
     <!-- JUMBO ends -->
 
     <!-- img figs begins -->
-    <div class="container-fluid">
+    <div class="container-fluid logos-container">
       <div class="row">
         <div class="col-12">
-          <div class="row">
+          <div class="row flex-gap">
             <figure class="figure">
               <img
                 src="./img/jq.png"
@@ -88,8 +108,22 @@
                 alt="jquery-logo"
               />
               <figcaption class="figure-caption">
-                Beginning with JQuery Jubilee
+                <a
+                  class="btn btn-outline-dark"
+                  data-toggle="collapse"
+                  href="#jq"
+                  role="button"
+                >
+                  jQuery
+                </a>
               </figcaption>
+              <div class="collapse" id="jq">
+                <div class="card card-body opencard">
+                  jQuery was the first library I began with to implement event
+                  handling and DOM traversal which has powered about 80% of my
+                  completed work.
+                </div>
+              </div>
             </figure>
 
             <figure class="figure">
@@ -99,9 +133,25 @@
                 alt="npm-logo"
               />
               <figcaption class="figure-caption">
-                Navigating the Node nebula
+                <a
+                  class="btn btn-outline-dark"
+                  data-toggle="collapse"
+                  href="#nebula"
+                  role="button"
+                >
+                  NodeJs
+                </a>
               </figcaption>
+              <div class="collapse" id="nebula">
+                <div class="card card-body opencard">
+                  Dependable from the start, Node provies a runtime environment
+                  for JavaScript. NPM manages its available packages and modules
+                  which I deploy a dime a dozen in most recent repos. See my
+                  most<a href="./contact.html">commonly used modules</a>
+                </div>
+              </div>
             </figure>
+
             <figure class="figure">
               <img
                 src="./img/api.png"
@@ -109,8 +159,21 @@
                 alt="api-img"
               />
               <figcaption class="figure-caption">
-                Reliable, real-world apps using REST API's
+                <a
+                  class="btn btn-outline-dark"
+                  data-toggle="collapse"
+                  href="#restful"
+                  role="button"
+                >
+                  Restful APIs
+                </a>
               </figcaption>
+              <div class="collapse" id="restful">
+                <div class="card card-body opencard">
+                  Over 80% of applications I have written use Application
+                  Programming Interface for practical, real life
+                </div>
+              </div>
             </figure>
 
             <figure class="figure">
@@ -120,9 +183,22 @@
                 alt="react-logo"
               />
               <figcaption class="figure-caption">
-                React: a relationship of reluctance & reconciliation
+                <a
+                  class="btn btn-outline-dark"
+                  data-toggle="collapse"
+                  href="#regale"
+                  role="button"
+                >
+                  React
+                </a>
               </figcaption>
+              <div class="collapse" id="regale">
+                <div class="card card-body opencard">
+                  Anim pariatur cliche rep
+                </div>
+              </div>
             </figure>
+
             <figure class="figure">
               <img
                 src="./img/mongodb-icon-62.png"
@@ -130,14 +206,29 @@
                 alt="mongodb-logo"
               />
               <figcaption class="figure-caption">
-                A caption for the above image.
+                <a
+                  class="btn btn-outline-dark"
+                  data-toggle="collapse"
+                  href="#magic"
+                  role="button"
+                >
+                  MongoDB Atlas
+                </a>
               </figcaption>
+              <div class="collapse" id="magic">
+                <div class="card card-body opencard">
+                  Anim pariatur cliche rep
+                </div>
+              </div>
             </figure>
           </div>
         </div>
       </div>
     </div>
     <!-- img figs ends -->
+    <div class="card-footer">
+      <small class="text-muted">Last updated 2 months ago</small>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

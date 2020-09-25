@@ -1,0 +1,62 @@
+.navbar {
+  padding: 1rem, 2rem;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  background: url("./img/email.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-body {
+  /* min-width: 35vh; */
+  margin: 0 auto;
+  padding-right: 2%;
+  padding-left: 2%;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+#con-card {
+  margin: 0 auto;
+  background-color: rgb(236, 236, 236);
+  max-width: 60%;
+  border-radius: 20px;
+}
+
+#con-icon {
+  margin-top: 2vh;
+  max-width: 6vh;
+}
+
+.card-text {
+  border: 1px solid;
+}
+
+.col-6 {
+  padding: 0px;
+  /* padding: none; */
+  /* display: flex;
+  justify-content: stretch; */
+}
+
+.card-title {
+  font-family: courier new;
+  font-size: 2rem;
+  margin-bottom: 0px;
+}
+/* 
+textarea {
+  width: 600px;
+  height: 300px;
+} */
+
+/* .top-margin {
+  margin-top: 3rem;
+}
+
+.contact-icon {
+  max-width: 3rem;
+} */
